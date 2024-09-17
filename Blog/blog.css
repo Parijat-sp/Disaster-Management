@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://media.urbanistnetwork.com/saigoneer/article-images/2019/Oct/16/disasters_SGNR1h.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background-attachment: fixed; /* Fix the background image */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #011432;
+    height: 11vh;
+}
+nav ul li{
+    list-style: none;
+}
+.logo {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    height: 6rem;
+}
+.inputbar {
+    width: 25vw;
+    border: 2px solid black;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: white;
+    height: 2.5rem;
+    padding-left: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.inputbar input {
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    width: 11rem;
+    color: black;
+    font-weight: 500;
+    padding-left: 0.7rem;
+}
+.btns {
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.btns a {
+    width: 4rem;
+    font-size: 1.3rem;
+    color: white;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container h1 {
+    color: white;
+    margin: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 10px rgba(98, 92, 92, 0.1);
+    position: relative; /* Add position relative to allow absolute positioning inside it */
+    z-index: 1; /* Ensure container stays above the background image */
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    position: relative; /* Add position relative */
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #413d3d;
+    padding-bottom: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+    .post {
+        padding: 10px;
+    }
+    .pagination button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
